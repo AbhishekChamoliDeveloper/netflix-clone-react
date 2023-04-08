@@ -30,7 +30,7 @@ const Hero = () => {
             Ready to watch? Enter your email to create or restart your
             membership.
           </p>
-          <div className="flex flex-row items-center justify-center space-x-5  max-sm:flex-col max-sm:space-y-4">
+          <div className="flex flex-row items-center justify-center space-x-5  max-sm:flex-col max-sm:space-y-4 max-sm:space-x-0">
             <input
               placeholder="Email address"
               type="email"
