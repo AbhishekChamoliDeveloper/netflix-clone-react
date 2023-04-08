@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import validator from "validator";
 
 import netflixBackground from "../assets/netflixBackground.png";
-import tv from "../assets/tv.png";
 import tvVideo from "../assets/video-tv-in-0819.mp4";
 
 const Hero = () => {
@@ -15,7 +14,7 @@ const Hero = () => {
   return (
     <>
       <div
-        className="min-h-screen bg-cover flex items-center justify-center max-sm:h-[80%]"
+        className="min-h-screen bg-cover flex items-center justify-center max-sm:h-[50%]"
         style={{
           backgroundImage: `   linear-gradient(to top, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 60%), url(${netflixBackground})`,
         }}
@@ -60,17 +59,20 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center p-[5rem] max-sm:p-[3rem] bg-black border-t-[5px] border-gray-700 max-sm:flex-col max-sm:space-y-10">
-        <div className="flex flex-col space-y-3 max-sm:text-center w-1/2 max-sm:w-full">
-          <h1 className="text-white text-5xl font-bold max-sm:text-3xl">
+      <div
+        className="flex flex-row items-center justify-between p-[5rem]
+      max-sm:p-[3rem] bg-black border-t-[5px] border-gray-700 max-sm:flex-col max-lg:flex-col max-sm:space-y-10 max-lg:space-y-10"
+      >
+        <div className="flex flex-col space-y-3 max-sm:text-center max-lg:text-center w-1/2 max-sm:w-full max-lg:w-full">
+          <h1 className="text-white text-5xl font-bold max-sm:text-3xl max-lg:text-4xl">
             Enjoy on your TV.
           </h1>
-          <p className="text-white text-2xl max-sm:text-lg">
+          <p className="text-white text-2xl max-sm:text-lg max-lg:text-xl">
             Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
             players and more.
           </p>
         </div>
-        <video autoPlay loop>
+        <video autoPlay loop muted>
           <source src={tvVideo} type="video/mp4" />
         </video>
       </div>
