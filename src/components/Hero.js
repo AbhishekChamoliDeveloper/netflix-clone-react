@@ -14,9 +14,9 @@ const Hero = () => {
   return (
     <>
       <div
-        className="min-h-screen bg-cover flex items-center justify-center max-sm:h-[50%]"
+        className="min-h-screen bg-cover flex items-center justify-center"
         style={{
-          backgroundImage: `   linear-gradient(to top, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 60%), url(${netflixBackground})`,
+          backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 60%), url(${netflixBackground})`,
         }}
       >
         <div className="text-center flex flex-col items-center justify-center space-y-4 p-3">
