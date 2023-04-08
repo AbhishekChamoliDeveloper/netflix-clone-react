@@ -60,10 +60,10 @@ const Hero = () => {
         </div>
       </div>
       <div
-        className="flex flex-row items-center justify-between p-[5rem]
-      max-sm:p-[3rem] bg-black border-t-[5px] border-gray-700 max-sm:flex-col max-lg:flex-col max-sm:space-y-10 max-lg:space-y-10"
+        className="flex flex-row items-center justify-center space-x-32 p-[5rem]
+      max-sm:p-[3rem] bg-black border-t-[5px] border-gray-700 max-sm:flex-col max-lg:flex-col max-sm:space-y-10 max-lg:space-y-10 max-lg:space-x-0"
       >
-        <div className="flex flex-col space-y-3 max-sm:text-center max-lg:text-center w-1/2 max-sm:w-full max-lg:w-full">
+        <div className="flex flex-col space-y-4 max-sm:text-center max-lg:text-center w-1/3 max-sm:w-full max-lg:w-full">
           <h1 className="text-white text-5xl font-bold max-sm:text-3xl max-lg:text-4xl">
             Enjoy on your TV.
           </h1>
