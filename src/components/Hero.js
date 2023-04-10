@@ -89,7 +89,7 @@ const Hero = () => {
             alt="stranger-things-in-phone"
             className="h-[20rem]"
           />
-          <div className="flex flex-row items-center justify-between border-[1px] border-white p-2 rounded-md w-[20rem]  absolute bg-black bottom-4">
+          <div className="flex flex-row items-center justify-between border-[1px] border-white p-2 rounded-md w-[16rem]  absolute bg-black bottom-4">
             <div className="flex flex-row items-center justify-center space-x-4">
               <img src={backshot} alt="Stanger-things" className="h-[3rem]" />
               <div>
