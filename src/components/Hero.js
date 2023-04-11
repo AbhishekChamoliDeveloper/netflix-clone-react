@@ -57,7 +57,28 @@ const Hero = () => {
                   />
                 </svg>
               </button>
-            ) : null}
+            ) : (
+              <button
+                className="flex flex-row space-x-1 items-center justify-center text-white text-lg bg-red-400  tranistion: duration-150 py-2 px-8 h-14 rounded-md"
+                disabled={true}
+              >
+                <p className="font-semibold">Get Started</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="w-5 h-5 font-semibold"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </button>
+            )}
           </div>
         </div>
       </div>
