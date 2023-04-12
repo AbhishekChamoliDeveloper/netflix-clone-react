@@ -1,17 +1,17 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Fandq from "./components/Fandq";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./components/Home";
+import SignIn from "./components/SignIn";
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Fandq />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" Component={Home} />
+        <Route exact path="/sign-in" Component={SignIn} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
